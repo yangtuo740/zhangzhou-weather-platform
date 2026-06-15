@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: weather-platform
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data/uploads:/app/uploads
+      - ./data/equipment.db:/app/equipment.db
+    environment:
+      - SECRET_KEY=${SECRET_KEY:-zhangzhou-weather-platform-2026}
+      - DATABASE_URL=sqlite:///./equipment.db
+      - UPLOAD_DIR=./uploads

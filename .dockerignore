@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Build artifacts
+backend/static/
+
+# Database (will be volume-mounted)
+backend/equipment.db
+
+# Uploads (will be volume-mounted)
+backend/uploads/
+
+# Env (use Docker env vars)
+backend/.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+Dockerfile.*
