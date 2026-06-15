@@ -1,0 +1,38 @@
+# 数据库
+*.db
+*.db-shm
+*.db-wal
+
+# 上传文件
+uploads/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.egg
+.venv/
+venv/
+
+# 环境配置（含密钥）
+.env
+
+# Node / 前端
+node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+test_ocr.py
